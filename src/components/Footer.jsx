@@ -26,10 +26,10 @@ export default function Footer() {
           </nav>
         </div>
         <motion.div
-          initial={{ clipPath: 'inset(0 100% 0 0)' }}
-          whileInView={{ clipPath: 'inset(0 0% 0 0)' }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 1.4, ease: [0.76, 0, 0.24, 1] }}
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0 }}
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
         >
           <Wordmark className="giant" height={undefined} style={{ width: '100%', height: 'auto' }} />
         </motion.div>

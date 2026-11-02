@@ -45,7 +45,7 @@ export default function Company() {
               ['Manufacturing', 'Buildable', 'Designed for the factory from day one, not fixed for it later.'],
             ].map(([l, v, p], i) => (
               <motion.div className="cell" key={l} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1, duration: 0.7 }}>
-                <span className="label">{l}</span><span className="v">{v}</span><p>{p}</p>
+                <span className="label">{l}</span><span className="v" style={{ fontSize: 'clamp(26px, 2.5vw, 38px)' }}>{v}</span><p>{p}</p>
               </motion.div>
             ))}
           </div>
